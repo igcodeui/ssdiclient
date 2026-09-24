@@ -21,13 +21,13 @@ input,textarea{width:100%;margin-top:16px;padding:13px;border-radius:11px;border
 </div>
 <script>
 const qs=[
-['Have you applied for disability before','choice',['YES','NO']],
-['When did you last work','date'],
-['How long work there','text'],
-['Let me confirm you worked 5 out last 10 yr','choice',['YES','NO']],
+['Have you applied for disability before?','choice',['YES','NO']],
+['When did you last work?','date'],
+['How long did you work there?','text'],
+['Let me confirm you worked 5 out last 10 yr.','choice',['YES','NO']],
 ['Do you see a doctor and on medications','choice',['YES','NO']],
-['Age','number'],
-["What going on why can't you work anymore",'textarea']
+['Age.','number'],
+["What going on why can't you work anymore?",'textarea']
 ];
 const a={};
 function render(){const root=document.getElementById('app');root.innerHTML='';qs.forEach((x,i)=>{let c=document.createElement('section');c.className='card';let ctl='';
